@@ -2,6 +2,8 @@
 // nativos do Node ou modulos que podemos criar e até 
 // mesmo instalar no Node.
 
+// Módulos nativos
+
 // Na função require, sempre temos que passar um argumento
 const path = require('path');
 
@@ -11,3 +13,9 @@ console.log(path.basename(__filename));
 
 // A função basename() pede um argumento de algum arquivo,
 // fornecendo o nome base do arquivo.
+
+// Meus Módulos
+
+const myModule = require('./exports');
+
+console.log(myModule);

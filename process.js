@@ -11,3 +11,7 @@ const lastName = process.argv[3];
 
 console.log(`Seu nome é ${firstName} ${lastName}`);
 // utilizando o comando node process Davi Teixeira
+
+// Outra maneira de passar um processo é por meio de flags:
+// Ex: node process --name "Davi Teixeira" --greeting "Tudo bem com você?"
+

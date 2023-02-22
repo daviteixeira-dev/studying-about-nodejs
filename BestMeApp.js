@@ -12,3 +12,8 @@ const ask = ( index = 0) => {
 };
 
 ask();
+
+process.stdin.on("data", data => {
+    process.stdout.write(data.toString().trim() + '\n');
+    process.exit()
+}) // ouvindo os eventos, toda vez que for inseridos dados ele roda a função

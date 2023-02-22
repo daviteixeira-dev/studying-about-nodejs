@@ -24,3 +24,22 @@ process.stdin.on("data", data => {
         process.exit();
     }
 }); // ouvindo os eventos, toda vez que for inseridos dados ele roda a função
+
+process.on("exit", () => {
+    console.log(`
+    Bacana Davi!
+    O que você aprendeu hoje foi:
+    ${answers[0]}
+
+    O que te aborreceu e você poderia melhorar foi:
+    ${answers[1]}
+
+    O que te deixou feliz hoje:
+    ${aswers[2]}
+
+    Você ajudou ${answers[3]} pessoas hoje!!
+
+    Volte amanhã para novas reflexões
+    
+    `)
+})

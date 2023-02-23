@@ -2,5 +2,8 @@ const { EventEmitter } = require('events');
 
 const ev = new EventEmitter();
 
-ev.emit('saySomething') // emitir evento
-console.log(ev);
+ev.on('saySomething', (message) => {
+    console.log('Eu ouvi você: ', message);
+}) // ouvindo a emição de eventos
+
+ev.emit('saySomething', "Davi") // emitir evento

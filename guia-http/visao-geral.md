@@ -94,3 +94,6 @@ GET serve para pegar um recurso, ou seja, só pode receber dados. Ele é um mét
 
 HEAD é semelhante ao GET, porém é recebido somente o cabeçalho. Ele é um método seguro e idempotente, não tem Body nem no envio nem na resposta, não é usado em formulários e é cacheable.
 
+### POST
+
+POST, que vem do inglês to post, que serve para publicar ou cadastrar um recurso. Ele não é seguro nem idempotente, pois muda informações no servidor e não receberá a mesma resposta de uma mesma requisição, o verbo POST tem Body tanto na requisição quanto na resposta, pode ser usado em formulários e é cacheable.

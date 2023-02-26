@@ -65,3 +65,7 @@ Para existir a comunicação entre o servidor e o cliente precisamos ter mensage
 ### Request
 
 A mensagem do pedido consiste no método, por exemplo GET, a versão do protocolo e a URI, dependendo do método usado, pode se levar headers e body.
+
+### Response
+
+A mensagens de resposta tem a versão do protocolo, o status code, os headers e a status message.

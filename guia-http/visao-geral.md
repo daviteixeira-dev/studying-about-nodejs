@@ -89,3 +89,8 @@ Os métodos Idempotentes são os métodos que não mudam de resposta, por isso a
 ### GET
 
 GET serve para pegar um recurso, ou seja, só pode receber dados. Ele é um método seguro e idempotente, que não pode enviar um Body no request, mas pode receber no response, ele também pode ser cacheable e é usado em alguns formulários.
+
+### HEAD
+
+HEAD é semelhante ao GET, porém é recebido somente o cabeçalho. Ele é um método seguro e idempotente, não tem Body nem no envio nem na resposta, não é usado em formulários e é cacheable.
+

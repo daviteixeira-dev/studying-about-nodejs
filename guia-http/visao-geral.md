@@ -125,3 +125,43 @@ Na parte de General, podemos perceber que são Headers que servem tanto para o p
 ### Request
 
 Se abrirmos a aba dos cabeçalhos de request, podemos ver vários headers, como o :authority:, que é a autoridade do pedido, o :method:, que é o método do pedido, o :path:, que é o caminho do pedido, o :schema:, que é o esquema que foi usado, o accept, que é o que é aceito, accept-encoding, que são os tipos de compressão usados, cookie, que são rastros deixados para a próxima conexão, entre outros.
+
+## Status code mais comuns
+
+A proposta do status code é ter uma comunicação mais clara entre o back-end com o cliente.
+
+O status code do tipo 100 servem pra mostrar que a operação pode ser continuada sem problemas.
+
+- [100]
+100: Continue
+
+Os status code do tipo 200 podem significar: 200 em si, significa que tudo está ok (GET e POST), 201, significa que o recurso foi criado (PUT), 204, significa que não há conteúdo (PUT e DELETE).
+
+-[200]
+200: OK (GET, POST)
+201: Created (PUT)
+204: No content (DELETE, PUT)
+
+Os status code do tipo 300 podem significar: 301, significa movido permanentemente, 308, significa redirecionamento permanente, 302, significa uma mudança temporária assim como o 307.
+
+-[300]
+301: Moved Permanently
+308: Permanent Redirect
+302: Found
+307: Temporary Redirect
+
+Os status code o tipo 400 podem significar: 400, que significa que o pedido foi mal efetuado, 401, que significa que o pedido não teve autorização, 403, que significa que a autorização foi negada, 404, que o pedido não foi encontrado, 405, que significa que o método usado não é permitido e 429, que significa que foram efetuados muitos pedidos.
+
+-[400]
+400: Bad Request
+401: Unauthorized
+403: Forbidden
+404: Not Found
+405: Method Not Allowed
+429: Too Many Requests
+
+Os do tipo 500: 500, que significa que ocorreu um erro desconhecido no servidor e o 503, que significa que o servidor está indisponível no momento.
+
+-[500]
+500: Internal Server Error
+503: Service Unavalable

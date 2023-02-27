@@ -11,3 +11,9 @@
 <p>
   Por meio do EJS é possível entender como o Javascript constrói o HTML com NodeJS e Express.
 </p>
+
+<h2>Javascript Assíncrono e Promises</h2>
+
+<p>
+  Como funciona o assincronismo no Javascript, callbacks, Promises e Async/Await.
+</p>

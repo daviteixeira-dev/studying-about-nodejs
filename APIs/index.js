@@ -23,3 +23,7 @@ app.route('/put').put((req, res) => {
     author = req.body.author //dessa forma, guardamos apenas o nome do autor, em vez da estrutura json inteira.
     res.send(author)
 })
+
+app.route('/:identificador').delete((req, res) => {
+    res.send(req.params.identificador) //params para se passar uma variavel, normalmente o id
+})

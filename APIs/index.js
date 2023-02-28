@@ -12,3 +12,14 @@ app.use(express.json()) // transforma tudo em json
 
 // app.route('/').post((req, res) => console.log(req.body))
 app.route('/').post((req, res) => res.send(req.body))
+
+// PUT - serve para editar
+
+let author = "Davi"
+
+app.route('/put').get((req, res) => res.send(author))
+
+app.route('/put').put((req, res) => {
+    author = req.body.author //dessa forma, guardamos apenas o nome do autor, em vez da estrutura json inteira.
+    res.send(author)
+})

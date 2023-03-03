@@ -17,3 +17,9 @@
 <p>
   Como funciona o assincronismo no Javascript, callbacks, Promises e Async/Await.
 </p>
+
+<h2>Trabalhando com APIs</h2>
+
+<p>
+  Aprender o que são APIs, como criar APIs no Back-end e como consumir APIs no Front-end.
+</p>

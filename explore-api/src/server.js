@@ -12,6 +12,15 @@ app.get("/message/:id/:user", (request, response) => {
     `);
 });
 
+app.get("/users", (request, response) => {
+
+    const { page, limit } = request.query;
+
+    // Query Params = https://address.com/recurso?page=2&limit=4
+    
+    response.send(`Página: ${page}. Limite: ${limit}.`);
+});
+
 const PORT = 3333;
 
 app.listen(PORT, () => console.log(`Server is running on Port ${PORT}`));

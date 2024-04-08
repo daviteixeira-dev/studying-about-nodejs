@@ -10,7 +10,7 @@ class ProductsController {
 
     create(request, response){
         const { name, email, password } = request.body;
-        response.send(`Usuário: ${name} - Email: ${email} e a senha ${password}.`);
+        response.status(201).send(`Usuário: ${name} - Email: ${email} e a senha ${password}.`);
     }
 }
 

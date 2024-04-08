@@ -17,8 +17,12 @@ app.get("/users", (request, response) => {
     const { page, limit } = request.query;
 
     // Query Params = https://address.com/recurso?page=2&limit=4
-    
+
     response.send(`Página: ${page}. Limite: ${limit}.`);
+});
+
+app.post("/products", (request, response) => {
+    response.send(`Você chamou o POST!`)
 });
 
 const PORT = 3333;

@@ -1,3 +1,5 @@
+const AppError = require("../utils/AppError");
+
 class ProductsController {
     /** Padrão para um Controller
      * 
@@ -10,6 +12,11 @@ class ProductsController {
 
     create(request, response){
         const { name, email, password } = request.body;
+
+        if(!name){
+            throw new AppError("Nome é obrigatorio!");
+        }
+
         response.status(201).send(`Usuário: ${name} - Email: ${email} e a senha ${password}.`);
     }
 }

@@ -1,12 +1,11 @@
 const { Router } = require("express");
 
+const ProductsController = require("../controllers/ProductsController");
+
 const productsRouter = Router();
 
-productsRouter.post("/", (request, response) => {
+const productsController = new ProductsController();
 
-    const { name, email, password } = request.body;
-
-    response.send(`Usuário: ${name} - Email: ${email} e a senha ${password}.`)
-});
+productsRouter.post("/", productsController.create);
 
 module.exports = productsRouter;

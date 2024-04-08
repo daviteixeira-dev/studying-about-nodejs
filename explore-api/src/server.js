@@ -1,5 +1,7 @@
 const express = require("express");
 
+const routes = require("./routes");
+
 const app = express();
 
 app.use(express.json());
@@ -23,12 +25,7 @@ app.get("/users", (request, response) => {
     response.send(`Página: ${page}. Limite: ${limit}.`);
 });
 
-app.post("/products", (request, response) => {
-
-    const { name, email, password } = request.body;
-
-    response.send(`Usuário: ${name} - Email: ${email} e a senha ${password}.`)
-});
+app.use(routes);
 
 const PORT = 3333;
 
